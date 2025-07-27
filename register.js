@@ -32,7 +32,7 @@ document.getElementById('registerForm').addEventListener('submit', function (e) 
     };
     localStorage.setItem('user', JSON.stringify(user));
     alert('Registration Successful!');
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
   };
 
   if (profilePic) reader.readAsDataURL(profilePic);

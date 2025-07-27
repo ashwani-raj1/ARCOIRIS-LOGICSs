@@ -1,6 +1,6 @@
 if (localStorage.getItem('session') !== 'true') {
   alert('Please login first.');
-  window.location.href = 'login.html';
+  window.location.href = 'index.html';
 }
 
 const user = JSON.parse(localStorage.getItem('user'));
@@ -15,5 +15,5 @@ document.getElementById('userSkills').textContent = user.skills.join(', ');
 
 function logout() {
   localStorage.removeItem('session');
-  window.location.href = 'login.html';
+  window.location.href = 'index.html';
 }
